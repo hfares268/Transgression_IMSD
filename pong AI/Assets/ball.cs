@@ -43,6 +43,8 @@ public class ball : MonoBehaviour
 
             case "ai1":
             case "ai2":
+            case "p1":
+            case "p2":
                 velocity.x *= -1f;
                 return;
         }

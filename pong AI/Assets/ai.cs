@@ -11,6 +11,7 @@ public class ai : MonoBehaviour
 
     [Range(0, 1)]
     public float skill;
+    //public float boost = 0;
 
     void Update()
     {
