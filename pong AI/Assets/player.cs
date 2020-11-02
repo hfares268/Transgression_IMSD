@@ -10,6 +10,8 @@ public class player : MonoBehaviour
     public float speed = 5f;
 
     public Transform plyr;
+
+    public ai myskill;
     
 
 
@@ -32,7 +34,8 @@ public class player : MonoBehaviour
         switch (collision.transform.name)
         {
             case "Sphere":
-                //ai.boost
+                myskill.skill+=.01f;
+                //derp
                 
                 return;
 

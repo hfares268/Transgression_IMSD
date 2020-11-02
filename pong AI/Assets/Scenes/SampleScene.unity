@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1710907747}
-  skill: 0.037
+  skill: 0.405
 --- !u!65 &240933377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -899,6 +899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   plyr: {fileID: 1420147929}
+  myskill: {fileID: 424158502}
 --- !u!1 &1688891261
 GameObject:
   m_ObjectHideFlags: 0
