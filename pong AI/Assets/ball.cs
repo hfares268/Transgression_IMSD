@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class ball : MonoBehaviour
 {
-    public float speed = .1f;
+    public float speed = 100f;
     Vector3 velocity;
     
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class ball : MonoBehaviour
     void FixedUpdate()
     {
         velocity = velocity.normalized * speed;
-        transform.position += velocity;
+        transform.position += velocity* Time.deltaTime;
         
     }
 
@@ -37,7 +37,13 @@ public class ball : MonoBehaviour
         {
             case "top":
             case "bottom":
-            velocity.x *= -1f;
+                //velocity.x *= -1f;
+                velocity.y *= -1f;
+                return;
+
+            case "ai1":
+            case "ai2":
+                velocity.x *= -1f;
                 return;
         }
 
